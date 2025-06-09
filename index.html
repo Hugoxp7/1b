@@ -12,140 +12,62 @@
       <h1>Receitas Salgadas</h1>
       <button id="theme-toggle">🌓</button>
     </div>
-    <p>Explore deliciosas receitas salgadas para o seu dia a dia!</p>
+    <p>Explore receitas deliciosas e práticas para o seu dia a dia!</p>
   </header>
 
   <nav>
     <ul>
       <li><button onclick="showTab('home')">Início</button></li>
-      <li><button onclick="showTab('entradas')">🥗 Entradas</button></li>
-      <li><button onclick="showTab('pratos')">🍽️ Pratos Principais</button></li>
-      <li><button onclick="showTab('sobremesas')">🍰 Sobremesas</button></li>
+      <li><button onclick="showTab('receita1')">🍝 Receita 1</button></li>
+      <li><button onclick="showTab('receita2')">🍔 Receita 2</button></li>
+      <li><button onclick="showTab('sobre')">📚 Sobre</button></li>
     </ul>
   </nav>
 
   <main>
     <section id="home" class="tab active">
-      <h2>🍴 Bem-vindo ao Mundo das Receitas Salgadas!</h2>
-      <p>Encontre receitas para todos os gostos, desde entradas rápidas até pratos principais e sobremesas deliciosas!</p>
+      <h2>🍽️ Bem-vindo ao Mundo das Receitas Salgadas</h2>
+      <p>Descubra como preparar pratos incríveis e saborosos para toda a família!</p>
+    </section>
+
+    <section id="receita1" class="tab">
+      <h2>🍝 Spaghetti ao Alho e Óleo</h2>
+      <h4>Ingredientes:</h4>
       <ul>
-        <li>Receitas práticas e rápidas</li>
-        <li>Ingredientes acessíveis</li>
-        <li>Passo a passo simples e fácil de seguir</li>
-        <li>Opções para todas as refeições</li>
+        <li>200g de spaghetti</li>
+        <li>4 dentes de alho picados</li>
+        <li>50ml de azeite</li>
+        <li>Sal e pimenta a gosto</li>
+        <li>Queijo parmesão ralado (opcional)</li>
       </ul>
+      <h4>Modo de preparo:</h4>
+      <p>Cozinhe o spaghetti em água salgada até ficar al dente. Em uma frigideira, aqueça o azeite e frite o alho até dourar. Misture o spaghetti ao alho, adicione sal e pimenta, e sirva com queijo parmesão ralado.</p>
     </section>
 
-    <section id="entradas" class="tab">
-      <h2>🥗 Entradas Deliciosas</h2>
-      
-      <div class="recipe">
-        <h3>Salada de Quinoa com Legumes Grelhados</h3>
-        <h4>Ingredientes:</h4>
-        <ul>
-          <li>1 xícara de quinoa</li>
-          <li>1 abobrinha cortada em rodelas</li>
-          <li>1 berinjela cortada em rodelas</li>
-          <li>1 cenoura ralada</li>
-          <li>Azeite de oliva a gosto</li>
-          <li>Sal e pimenta a gosto</li>
-          <li>Suco de 1 limão</li>
-          <li>Salsinha picada para decorar</li>
-        </ul>
-        <h4>Modo de preparo:</h4>
-        <p>Primeiro, cozinhe a quinoa conforme as instruções da embalagem. Enquanto isso, grelhe os legumes até ficarem dourados e macios. Misture a quinoa com os legumes grelhados, adicione azeite, sal, pimenta e o suco de limão. Decore com salsinha picada e sirva.</p>
-      </div>
-
-      <div class="recipe">
-        <h3>Bruschetta de Tomate e Manjericão</h3>
-        <h4>Ingredientes:</h4>
-        <ul>
-          <li>4 fatias de pão italiano</li>
-          <li>2 tomates maduros picados</li>
-          <li>Folhas de manjericão fresco</li>
-          <li>Azeite de oliva a gosto</li>
-          <li>Sal e pimenta a gosto</li>
-        </ul>
-        <h4>Modo de preparo:</h4>
-        <p>Torre as fatias de pão e coloque-as em um prato. Em uma tigela, misture os tomates picados com as folhas de manjericão, azeite, sal e pimenta. Coloque essa mistura sobre as fatias de pão torrado e sirva imediatamente.</p>
-      </div>
+    <section id="receita2" class="tab">
+      <h2>🍔 Hambúrguer Caseiro</h2>
+      <h4>Ingredientes:</h4>
+      <ul>
+        <li>500g de carne moída</li>
+        <li>1 cebola picada</li>
+        <li>1 ovo</li>
+        <li>Sal e pimenta a gosto</li>
+        <li>Pão de hambúrguer</li>
+        <li>Alface, tomate, queijo e outros complementos a gosto</li>
+      </ul>
+      <h4>Modo de preparo:</h4>
+      <p>Tempere a carne com a cebola, ovo, sal e pimenta. Modele os hambúrgueres e grelhe-os em uma frigideira quente. Monte o hambúrguer com pão, carne e os complementos de sua preferência.</p>
     </section>
 
-    <section id="pratos" class="tab">
-      <h2>🍽️ Pratos Principais</h2>
-      
-      <div class="recipe">
-        <h3>Feijoada Completa</h3>
-        <h4>Ingredientes:</h4>
-        <ul>
-          <li>500g de feijão preto</li>
-          <li>300g de carne seca desfiada</li>
-          <li>200g de linguiça calabresa</li>
-          <li>200g de costelinha de porco</li>
-          <li>1 cebola picada</li>
-          <li>2 dentes de alho picados</li>
-          <li>Folhas de louro a gosto</li>
-          <li>Sal a gosto</li>
-          <li>Arroz branco para acompanhar</li>
-        </ul>
-        <h4>Modo de preparo:</h4>
-        <p>Deixe o feijão de molho por pelo menos 4 horas. Em uma panela grande, frite a carne seca desfiada e as linguiças até dourarem. Adicione a cebola, o alho e as folhas de louro, refogue por alguns minutos. Coloque o feijão, cubra com água e cozinhe até o feijão ficar macio. Sirva com arroz branco e acompanhamentos de sua preferência.</p>
-      </div>
-
-      <div class="recipe">
-        <h3>Frango à Parmegiana</h3>
-        <h4>Ingredientes:</h4>
-        <ul>
-          <li>4 filés de peito de frango</li>
-          <li>1 xícara de farinha de trigo</li>
-          <li>2 ovos batidos</li>
-          <li>1 xícara de farinha de rosca</li>
-          <li>500ml de molho de tomate</li>
-          <li>200g de queijo mussarela</li>
-          <li>Óleo para fritar</li>
-          <li>Sal e pimenta a gosto</li>
-        </ul>
-        <h4>Modo de preparo:</h4>
-        <p>Tempere os filés de frango com sal e pimenta. Passe-os na farinha de trigo, depois nos ovos batidos e na farinha de rosca. Frite até ficarem dourados. Em uma assadeira, coloque os filés fritos, cubra com o molho de tomate e a mussarela. Leve ao forno até o queijo derreter. Sirva com arroz e batatas fritas.</p>
-      </div>
-    </section>
-
-    <section id="sobremesas" class="tab">
-      <h2>🍰 Sobremesas</h2>
-      
-      <div class="recipe">
-        <h3>Pudim de Leite Condensado</h3>
-        <h4>Ingredientes:</h4>
-        <ul>
-          <li>1 lata de leite condensado</li>
-          <li>1 lata de leite</li>
-          <li>3 ovos</li>
-          <li>1 xícara de açúcar (para caramelizar)</li>
-        </ul>
-        <h4>Modo de preparo:</h4>
-        <p>Primeiro, caramelize o açúcar em uma forma. Em uma tigela, bata os ovos e misture com o leite condensado e o leite. Despeje a mistura na forma caramelizada e cozinhe em banho-maria por aproximadamente 1 hora. Deixe esfriar, desenforme e sirva.</p>
-      </div>
-
-      <div class="recipe">
-        <h3>Tiramisu Clássico</h3>
-        <h4>Ingredientes:</h4>
-        <ul>
-          <li>300g de biscoito champanhe</li>
-          <li>500g de queijo mascarpone</li>
-          <li>1 xícara de café forte</li>
-          <li>3 ovos</li>
-          <li>100g de açúcar</li>
-          <li>50g de cacau em pó</li>
-        </ul>
-        <h4>Modo de preparo:</h4>
-        <p>Primeiro, misture o café com o açúcar e molhe os biscoitos na mistura. Em uma tigela, bata as gemas com o açúcar e misture o mascarpone. Bata as claras em neve e adicione delicadamente ao creme. Em uma travessa, alterne camadas de biscoito molhado e creme. Finalize com cacau em pó e leve à geladeira por pelo menos 4 horas antes de servir.</p>
-      </div>
+    <section id="sobre" class="tab">
+      <h2>📚 Sobre este site</h2>
+      <p>Este site foi criado para compartilhar receitas práticas e saborosas, feitas com ingredientes simples, para o seu dia a dia. Aproveite!</p>
     </section>
   </main>
 
   <footer>
-    <p>Feito com ❤️ por <strong>Victor Hugo</strong></p>
-    <p><strong>Contato:</strong> <a href="mailto:astrovictor59@gmail.com">astrovictor59@gmail.com</a> | WhatsApp: <a href="tel:+5541997088269">41 99708-8269</a></p>
+    <p>Feito com ❤️ por Victor Hugo</p>
+    <p><strong>Contato:</strong> astrovictor59@gmail.com | WhatsApp: (41) 99708-8269</p>
     <p><a href="https://instagram.com/hugozxp7" target="_blank">Instagram: @hugozxp7</a></p>
   </footer>
 
