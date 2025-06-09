@@ -1,29 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Receitas Salgadas</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <h1>Receitas Salgadas</h1>
-    <h2>Receitas Salgadas para você</h2>
-     <p>Nem picadinho, nem strogonoff: carne em tiras com creme de batata é o prato diferente que você queria pra variar o cardápio</p>
-     <p>Se você já cansou dos clássicos picadinho e strogonoff, mas quer manter a carne como protagonista no almoço ou jantar, prepare-se para conhecer uma receita que é puro conforto e sabor: carne em tiras com creme de batata.</p>
-     <p>Carne em tiras com creme de batata</p>
-     <section id="salario" class="tab">
-      <h2>🍽️Receitas Carne em tiras com creme de batata</h2>
+<body class="light-theme">
+  <header class="fade-in">
+    <div class="top-bar">
+      <h1>Receitas Salgadas</h1>
+      <button id="theme-toggle">🌓</button>
+    </div>
+    <p>Encontre deliciosas receitas salgadas para todas as ocasiões!</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><button onclick="showTab('home')">Início</button></li>
+      <li><button onclick="showTab('entradas')">🥗 Entradas</button></li>
+      <li><button onclick="showTab('pratos')">🍽️ Pratos Principais</button></li>
+      <li><button onclick="showTab('sobremesas')">🍰 Sobremesas</button></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="home" class="tab active">
+      <h2>🍴 Bem-vindo ao Mundo das Receitas Salgadas!</h2>
+      <p>Explore uma coleção de receitas para todos os gostos e ocasiões. Desde entradas rápidas até pratos principais incríveis, temos opções para todos!</p>
       <ul>
-        <h3>INGREDIENTES</h3>
-        <li>1️⃣ 500g de filé mignon</li>
-        <li>2️⃣ 1/2 cebola picadinha</li>
-        <li>3️⃣ Sal a gosto</li>
-        <li>4️⃣ Pimenta-do-reino a gosto</li>
-        <li>5️⃣ 3 batatas pequenas cozidas</li>
-        <li>6️⃣ 1 xícara de chá de creme de leite fresco</li>
-        <li>7️⃣ 3/4 de xícara de chá de muçarela ralada</li>
-        <li>8️⃣ 1 pitada de sal</li>
+        <li>Receitas rápidas e práticas</li>
+        <li>Ingredientes acessíveis</li>
+        <li>Passo a passo simples e fácil de seguir</li>
+        <li>Opções para todos os gostos</li>
       </ul>
     </section>
-</body> 
+
+    <section id="entradas" class="tab">
+      <h2>🥗 Entradas Fáceis e Rápidas</h2>
+
+      <div class="recipe">
+        <h3>Salada de Quinoa com Legumes Grelhados</h3>
+        <p><strong>Ingredientes:</strong></p>
+        <ul>
+          <li>1 xícara de quinoa</li>
+          <li>1 abobrinha cortada em rodelas</li>
+          <li>1 berinjela cortada em rodelas</li>
+          <li>1 cenoura ralada</li>
+          <li>Azeite de oliva a gosto</li>
+          <li>Sal e pimenta a gosto</li>
+          <li>Suco de 1 limão</li>
+          <li>Salsinha picada para decorar</li>
+        </ul>
+      </div>
+
+      <div class="recipe">
+        <h3>Bruschetta de Tomate e Manjericão</h3>
+        <p><strong>Ingredientes:</strong></p>
+        <ul>
+          <li>4 fatias de pão italiano</li>
+          <li>2 tomates maduros picados</li>
+          <li>Folhas de manjericão fresco</li>
+          <li>Azeite de oliva a gosto</li>
+          <li>Sal e pimenta a gosto</li>
+        </ul>
+      </div>
+
+      <div class="recipe">
+        <h3>Patê de Ricota com Ervas Finas</h3>
+        <p><strong>Ingredientes:</strong></p>
+        <ul>
+          <li>200g de ricota</li>
+          <li>2 colheres de sopa de azeite de oliva</li>
+          <li>1 dente de alho picado</li>
+          <li>Ervas finas a gosto (tomilho, alecrim, orégano)</li>
+          <li>Sal e pimenta a gosto</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="pratos" class="tab">
+      <h2>🍽️ Pratos Principais Irresistíveis</h2>
+
+      <div class="recipe">
+        <h3>Feijoada Completa</h3>
+        <p><strong>Ingredientes:</strong></p>
+        <ul>
+          <li>500g de feijão preto</li>
+          <li>300g de carne seca desfiada</li>
+          <li>200g de linguiça calabresa</li>
+          <li>200g de costelinha de porco</li>
+          <li>1 cebola picada</li>
+          <li>2 dentes de alho picados</li>
+          <li>Folhas de louro a gosto</li>
+          <li>Sal a gosto</li>
+          <li>Arroz branco para acompanhar</li>
+        </ul>
+      </div>
+
+      <div class="recipe">
+        <h3>Frango à Parmegiana</h3>
+        <p><strong>Ingredientes:</strong></p>
+        <ul>
+          <li>4 filés de peito de frango</li>
+          <li>1 xícara de farinha de trigo</li>
+          <li>2 ovos batidos</li>
+          <li>1 xícara de farinha de rosca</li>
+          <li>500ml de molho de tomate</li>
+          <li>200g de queijo mussarela</li>
+          <li>Óleo para fritar</li>
+          <li>Sal e pimenta a gosto</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="sobremesas" class="tab">
+      <h2>🍰 Sobremesas Deliciosas</h2>
+
+      <div class="recipe">
+        <h3>Pudim de Leite Condensado</h3>
+        <p><strong>Ingredientes:</strong></p>
+        <ul>
+          <li>1 lata de leite condensado</li>
+          <li>1 lata de leite</li>
+          <li>3 ovos</li>
+          <li>1 xícara de açúcar (para caramelizar)</li>
+        </ul>
+      </div>
+
+      <div class="recipe">
+        <h3>Tiramisu Clássico</h3>
+        <p><strong>Ingredientes:</strong></p>
+        <ul>
+          <li>300g de biscoito champanhe</li>
+          <li>500g de queijo mascarpone</li>
+          <li>1 xícara de café forte</li>
+          <li>3 ovos</li>
+          <li>100g de açúcar</li>
+          <li>50g de cacau em pó</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito com ❤️ por <strong>Seu Nome</strong> | Para compartilhar o amor pela culinária!</p>
+    <p><strong>Contato:</strong> seuemail@dominio.com</p>
+    <p><a href="https://instagram.com/seunome" target="_blank">Instagram: @seunome</a></p>
+  </footer>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+      document.body.classList.toggle('light-theme');
+    });
+  </script>
+</body>
 </html>
