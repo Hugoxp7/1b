@@ -1,24 +1,35 @@
-/* Reset básico */
+/* Resetando margens e paddings */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Definindo fontes principais */
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
+  background-color: #fff;
   color: #333;
   line-height: 1.6;
-  padding-top: 60px;
-  transition: background-color 0.3s, color 0.3s;
 }
 
+/* Tema claro */
+body.light-theme {
+  background-color: #f4f4f9;
+}
+
+/* Tema escuro */
+body.dark-theme {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Estilo para o cabeçalho */
 header {
-  background-color: #ff9800;
-  color: white;
-  padding: 20px 0;
+  background-color: #ff6347;
+  color: #fff;
   text-align: center;
+  padding: 20px 0;
 }
 
 header h1 {
@@ -30,38 +41,115 @@ header p {
   font-size: 1.2rem;
 }
 
+/* Estilo para o menu de navegação */
 nav {
-  background-color: #ffffff;
-  padding: 10px 0;
-  text-align: center;
-  box-shadow: 0 4px 2px -2px gray;
+  background-color: #333;
 }
 
 nav ul {
+  display: flex;
+  justify-content: center;
   list-style: none;
+  padding: 10px 0;
 }
 
 nav ul li {
-  display: inline-block;
   margin: 0 15px;
 }
 
 nav ul li button {
-  background-color: transparent;
+  background-color: #333;
+  color: #fff;
   border: none;
-  font-size: 1.2rem;
+  padding: 10px;
   cursor: pointer;
-  transition: color 0.3s ease-in-out;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
 }
 
 nav ul li button:hover {
-  color: #ff9800;
+  background-color: #ff6347;
 }
 
+/* Estilos gerais para o conteúdo */
 main {
-  padding: 40px 20px;
+  padding: 20px;
 }
 
+h2 {
+  font-size: 2rem;
+  color: #ff6347;
+  margin-bottom: 20px;
+}
+
+/* Estilo para cada receita */
+.recipe {
+  margin-bottom: 30px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe h3 {
+  font-size: 1.8rem;
+  color: #ff6347;
+  margin-bottom: 10px;
+}
+
+.recipe h4 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.recipe ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+.recipe ul li {
+  margin-bottom: 8px;
+}
+
+.recipe p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Estilo para o footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #ff6347;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Efeito de transição no tema */
+#theme-toggle {
+  background-color: #ff6347;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+#theme-toggle:hover {
+  background-color: #e55347;
+}
+
+/* Efeito de transição para o conteúdo das abas */
 .tab {
   display: none;
 }
@@ -70,185 +158,41 @@ main {
   display: block;
 }
 
-section h2 {
-  font-size: 2rem;
-  color: #ff5722;
+.tab img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
   margin-bottom: 20px;
 }
 
-section h3 {
-  font-size: 1.8rem;
-  color: #ff5722;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-ul {
-  list-style: none;
-}
-
-ul li {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-
-ul li strong {
-  font-weight: bold;
-}
-
-.recipe ul {
-  margin-left: 20px;
-}
-
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 30px;
-}
-
-footer p {
-  margin-bottom: 10px;
-}
-
-footer a {
-  color: #ff9800;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
+/* Estilo para o botão de alternância de tema */
 button#theme-toggle {
+  border-radius: 50%;
   background-color: transparent;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  color: #ffffff;
-  transition: color 0.3s ease-in-out;
+  padding: 8px;
+  border: 1px solid #fff;
 }
 
 button#theme-toggle:hover {
-  color: #ff9800;
+  background-color: #e55347;
 }
 
-/* Estilos para o modo escuro */
-body.dark-theme {
-  background-color: #333;
-  color: #f4f4f4;
-}
-
-body.dark-theme header {
-  background-color: #ff5722;
-}
-
-body.dark-theme nav {
-  background-color: #444;
-}
-
-body.dark-theme footer {
-  background-color: #222;
-}
-
-body.dark-theme footer a {
-  color: #ff9800;
-}
-
-body.dark-theme footer a:hover {
-  color: #fff;
-}
-
-body.dark-theme button#theme-toggle {
-  color: #ff5722;
-}
-
-/* Estilos para as receitas */
-.recipe {
-  background-color: #ffffff;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-.recipe p {
-  font-size: 1.1rem;
-}
-
-.recipe ul {
-  list-style: disc;
-  margin-left: 40px;
-}
-
-.recipe ul li {
-  font-size: 1.1rem;
-}
-
-.recipe h3 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-}
-
-.recipe ul li {
-  margin-bottom: 8px;
-}
-
-/* Estilos para o botão de alternância de tema */
-body.light-theme {
-  background-color: #f4f4f4;
-}
-
-body.light-theme header {
-  background-color: #ff9800;
-}
-
-body.light-theme nav {
-  background-color: #ffffff;
-  box-shadow: 0 4px 2px -2px gray;
-}
-
-body.light-theme footer {
-  background-color: #333;
-}
-
-body.light-theme footer a {
-  color: #ff9800;
-}
-
-body.light-theme footer a:hover {
-  text-decoration: underline;
-}
-
-body.light-theme button#theme-toggle {
-  color: #ffffff;
-}
-
-/* Adicionando alguns ajustes para a responsividade */
+/* Responsividade */
 @media (max-width: 768px) {
   nav ul {
-    padding: 0;
+    flex-direction: column;
   }
 
   nav ul li {
-    display: block;
     margin: 10px 0;
   }
 
-  .top-bar h1 {
-    font-size: 2rem;
+  .recipe {
+    padding: 15px;
   }
 
-  .tab h2 {
-    font-size: 1.6rem;
-  }
-
-  .tab h3 {
-    font-size: 1.4rem;
-  }
-
-  .recipe ul {
-    margin-left: 20px;
+  footer p {
+    font-size: 0.9rem;
   }
 }
+
